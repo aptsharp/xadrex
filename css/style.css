@@ -1,0 +1,39 @@
+
+
+#tabuleiro{
+ margin: auto;
+  width:  800px;
+  height: 800px;
+  border: 1px solid black;
+  
+  margin-top: 80px;
+}
+
+.casa{
+  width: 100px;
+  height: 100px;
+  float: left;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.corBranca{
+  background-color: white;
+}
+
+.corPreta{
+  background-color:black;
+}
+
+.clear{
+  clear: both;
+}
+
+.peca{
+  border-radius: 50px;
+  
+  font-size: 50px;
+
+}
