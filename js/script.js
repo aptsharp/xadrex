@@ -1,103 +1,269 @@
-
 /*Variaveis Globais */
 
 var tabuleiro = [{}];
 
 /*Carregamento */
 
-
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener("DOMContentLoaded", (event) => {
   //the event occurred
   preenchimentoTabuleiro();
-})
+});
 
 /*Functions */
 preenchimentoTabuleiro = () => {
- tabuleiro = [
-  {
-   linha:1,
-   coluna:1,
-   peca:'T1P2',
-   player:1,
-   nome:"torre",
-  },
-  {
-    linha:1,
-    coluna:2,
-    peca:'C1P2',
-    player:1,
-    nome:'cavalo',
-  },
-  {
-    linha:1,
-    coluna:2,
-    peca:'B1P2',
-    player:1,
-    nome:"bispo"
-  },
-  {
-    linha:1,
-    coluna:2,
-    peca:'C1P2',
-    player:1,
-    nome:"bispo"
-  }
-];
- console.log(tabuleiro[0].linha);
- /*
-  
-  tabuleiro[13] = "B1P2"
-  tabuleiro[14] = "D1P2"
-  tabuleiro[15] = "R1P2"
-  tabuleiro[16] = "B2P2"
-  tabuleiro[17] = "C2P2"
-  tabuleiro[18] = "T2P2"
-  tabuleiro[21] = "P1P2"
-  tabuleiro[22] = "P2P2"
-  tabuleiro[23] = "P3P2"
-  tabuleiro[24] = "P4P2"
-  tabuleiro[25] = "P5P2"
-  tabuleiro[26] = "P6P2"
-  tabuleiro[27] = "P7P2"
-  tabuleiro[28] = "P8P2"
+  tabuleiro = {
+    T1P2: {
+      linha: 1,
+      coluna: 1,
+      peca: "T1P2",
+      player: 2,
+      nome: "torre",
+    },
+    C1P2: {
+      linha: 1,
+      coluna: 2,
+      peca: "C1P2",
+      player: 2,
+      nome: "cavalo",
+    },
+    B1P2: {
+      linha: 1,
+      coluna: 3,
+      peca: "B1P2",
+      player: 2,
+      nome: "bispo",
+    },
+    D1P2: {
+      linha: 1,
+      coluna: 4,
+      peca: "D1P2",
+      player: 2,
+      nome: "rainha",
+    },
+    R1P2: {
+      linha: 1,
+      coluna: 5,
+      peca: "R1P2",
+      player: 2,
+      nome: "rei",
+    },
+    B2P2: {
+      linha: 1,
+      coluna: 6,
+      peca: "B2P2",
+      player: 2,
+      nome: "bispo",
+    },
+    C2P2: {
+      linha: 1,
+      coluna: 7,
+      peca: "C2P2",
+      player: 2,
+      nome: "cavalo",
+    },
+    T2P2: {
+      linha: 1,
+      coluna: 7,
+      peca: "T2P2",
+      player: 2,
+      nome: "torre",
+    },
+    P1P2: {
+      linha: 2,
+      coluna: 1,
+      peca: "P1P2",
+      player: 2,
+      nome: "piao",
+    },
+    P2P2: {
+      linha: 2,
+      coluna: 2,
+      peca: "P2P2",
+      player: 2,
+      nome: "piao",
+    },
+    P3P2: {
+      linha: 2,
+      coluna: 3,
+      peca: "P3P2",
+      player: 2,
+      nome: "piao",
+    },
+    P4P2: {
+      linha: 2,
+      coluna: 4,
+      peca: "P4P2",
+      player: 2,
+      nome: "piao",
+    },
+    P5P2: {
+      linha: 2,
+      coluna: 5,
+      peca: "P5P2",
+      player: 2,
+      nome: "piao",
+    },
+    P6P2: {
+      linha: 2,
+      coluna: 6,
+      peca: "P6P2",
+      player: 2,
+      nome: "piao",
+    },
+    P7P2: {
+      linha: 2,
+      coluna: 7,
+      peca: "P7P2",
+      player: 2,
+      nome: "piao",
+    },
+    P8P2: {
+      linha: 2,
+      coluna: 8,
+      peca: "P8P2",
+      player: 2,
+      nome: "piao",
+    },
 
-  tabuleiro[81] = "T1P1"
-  tabuleiro[82] = "C1P1"
-  tabuleiro[83] = "B1P1"
-  tabuleiro[84] = "D1P1"
-  tabuleiro[85] = "R1P1"
-  tabuleiro[86] = "B2P1"
-  tabuleiro[87] = "C2P1"
-  tabuleiro[88] = "T2P1"
-  tabuleiro[71] = "P1P1"
-  tabuleiro[72] = "P2P1"
-  tabuleiro[73] = "P3P1"
-  tabuleiro[74] = "P4P1"
-  tabuleiro[75] = "P5P1"
-  tabuleiro[76] = "P6P1"
-  tabuleiro[77] = "P7P1"
-  tabuleiro[78] = "P8P1"
+    //JOGADOR 1//
 
-  console.log(tabuleiro);
-  */
-}
+    T1P1: {
+      linha: 8,
+      coluna: 1,
+      peca: "T1P1",
+      player: 1,
+      nome: "torre",
+    },
+    C1P1: {
+      linha: 8,
+      coluna: 2,
+      peca: "C1P1",
+      player: 1,
+      nome: "cavalo",
+    },
+    B1P1: {
+      linha: 8,
+      coluna: 3,
+      peca: "B1P1",
+      player: 1,
+      nome: "bispo",
+    },
+    D1P1: {
+      linha: 8,
+      coluna: 4,
+      peca: "D1P1",
+      player: 1,
+      nome: "rainha",
+    },
+    R1P1: {
+      linha: 8,
+      coluna: 5,
+      peca: "R1P1",
+      player: 1,
+      nome: "rei",
+    },
+    B2P1: {
+      linha: 8,
+      coluna: 6,
+      peca: "B2P1",
+      player: 1,
+      nome: "bispo",
+    },
+    C2P1: {
+      linha: 8,
+      coluna: 7,
+      peca: "C2P1",
+      player: 1,
+      nome: "cavalo",
+    },
+    T2P1: {
+      linha: 8,
+      coluna: 8,
+      peca: "T2P1",
+      player: 1,
+      nome: "torre",
+    },
+    P1P1: {
+      linha: 7,
+      coluna: 1,
+      peca: "P1P1",
+      player: 1,
+      nome: "piao",
+    },
+    P2P1: {
+      linha: 7,
+      coluna: 2,
+      peca: "P2P1",
+      player: 1,
+      nome: "piao",
+    },
+    P3P1: {
+      linha: 7,
+      coluna: 3,
+      peca: "P3P1",
+      player: 1,
+      nome: "piao",
+    },
+    P4P1: {
+      linha: 7,
+      coluna: 4,
+      peca: "P4P1",
+      player: 1,
+      nome: "piao",
+    },
+    P5P1: {
+      linha: 7,
+      coluna: 5,
+      peca: "P5P1",
+      player: 1,
+      nome: "piao",
+    },
+    P6P1: {
+      linha: 7,
+      coluna: 6,
+      peca: "P6P1",
+      player: 1,
+      nome: "piao",
+    },
+    P7P1: {
+      linha: 7,
+      coluna: 7,
+      peca: "P7P1",
+      player: 1,
+      nome: "piao",
+    },
+    P8P1: {
+      linha: 7,
+      coluna: 8,
+      peca: "P8P1",
+      player: 1,
+      nome: "piao",
+    },
+  };
+};
 
+clique2 = (casa, peca) => {
+  //console.log(58 , peca );
+  console.log(casa);
+  $("#m" + casa).html("");
 
-cliquePeca = (peca,player,value) => {
+  $("#m" + casa).append(
+    "<button class='peca' onClick= 'cliquePeca('T2P1')'  >&#9814;</button>"
+  );
 
-  tabuleiro.forEach((elemento,index) => {
-      console.log(index+'----'+elemento);
-      return true;
-    });
+  $("#m" + 88).html("");
+};
 
-} 
+cliquePeca = (peca) => {
+  console.log(tabuleiro[peca]);
 
+  $("#m58").append("<button class='peca' onClick='clique2(58)'> a </button>");
+};
 
 /*
 var pecas = {
   torre1: {
-    name: 'Torre 1'	
-matriz: 11	
+    name: 'Torre 1'
   },
   torre2: {
     name: 'Torre 2'
@@ -108,4 +274,6 @@ console.log(JSON.stringify(pecas));
 console.log(JSON.stringify(Object.values(pecas)))
 
 Object.values(pecas).map((peca) => { console.log(peca) })
+
+console.log(pecas['torre1']);
 */
