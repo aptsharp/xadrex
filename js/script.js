@@ -1,12 +1,14 @@
 /*Variaveis Globais */
 
 var tabuleiro = [{}];
+var tabuleiroPlayer = [{}];
 
 /*Carregamento */
 
 document.addEventListener("DOMContentLoaded", (event) => {
   //the event occurred
   preenchimentoTabuleiro();
+  preenchimentoTabuleiroPlayer();
 });
 
 /*Functions */
@@ -242,9 +244,62 @@ preenchimentoTabuleiro = () => {
   };
 };
 
+preenchimentoTabuleiroPlayer = () => {
+  let tabuleiroAux = Object.values(tabuleiro);
+  for (let index = 0; index < tabuleiroAux.length; index++) {
+    let nomePos = tabuleiroAux[index].linha + "" + tabuleiroAux[index].coluna;
+    tabuleiroPlayer[nomePos] = tabuleiroAux[index].player;
+  }
+  console.log(tabuleiroPlayer);
+};
+
+andarTorre = (torre) => {
+  console.log(torre);
+
+  let linha = torre.linha;
+  let coluna = torre.coluna;
+  let linhaAux;
+
+  linhaAux = linha + 1;
+  for (let index = linhaAux; index <= 8; index++) {
+    let Ndiv = "#m" + index + "" + coluna + "";
+
+    if ($(Ndiv).html()) {
+      //loop para saber da casa
+    } else {
+      $(Ndiv).html("");
+      $(Ndiv).append(
+        "<div class='moverPeca casa' onClick='clique2(58)' </div>"
+      );
+    }
+  }
+
+  linhaAux = linha - 1;
+  for (let index = linhaAux; index >= 1; index--) {
+    let Ndiv = "#m" + index + "" + coluna + "";
+    if ($(Ndiv).html()) {
+      if (tabuleiroPlayer[index + "" + coluna] != torre.player) {
+        let pecaInimiga = $(Ndiv).html();
+        $(Ndiv).html("");
+        $(Ndiv).append(
+          "<div class='moverPeca casa' onClick='clique2(58)'> " +
+            pecaInimiga +
+            "</div>"
+        );
+      }
+    } else {
+      $(Ndiv).html("");
+      $(Ndiv).append(
+        "<div class='moverPeca casa' onClick='clique2(58)'> </div>"
+      );
+    }
+  }
+};
+
 clique2 = (casa, peca) => {
+  //\""+value.profissional_id+"\",\""+idMedico+"\"
   //console.log(58 , peca );
-  console.log(casa);
+
   $("#m" + casa).html("");
 
   $("#m" + casa).append(
@@ -255,9 +310,10 @@ clique2 = (casa, peca) => {
 };
 
 cliquePeca = (peca) => {
-  console.log(tabuleiro[peca]);
-
-  $("#m58").append("<button class='peca' onClick='clique2(58)'> a </button>");
+  if (tabuleiro[peca].nome == "torre") {
+    andarTorre(tabuleiro[peca]);
+    return true;
+  }
 };
 
 /*
