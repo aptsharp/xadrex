@@ -20,7 +20,7 @@ preenchimentoTabuleiro = () => {
             peca: "T1P2",
             player: 2,
             nome: "torre",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         C1P2: {
             linha: 1,
@@ -28,7 +28,7 @@ preenchimentoTabuleiro = () => {
             peca: "C1P2",
             player: 2,
             nome: "cavalo",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         B1P2: {
             linha: 1,
@@ -36,7 +36,7 @@ preenchimentoTabuleiro = () => {
             peca: "B1P2",
             player: 2,
             nome: "bispo",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         D1P2: {
             linha: 1,
@@ -44,7 +44,7 @@ preenchimentoTabuleiro = () => {
             peca: "D1P2",
             player: 2,
             nome: "rainha",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         R1P2: {
             linha: 1,
@@ -52,7 +52,7 @@ preenchimentoTabuleiro = () => {
             peca: "R1P2",
             player: 2,
             nome: "rei",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         B2P2: {
             linha: 1,
@@ -60,7 +60,7 @@ preenchimentoTabuleiro = () => {
             peca: "B2P2",
             player: 2,
             nome: "bispo",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         C2P2: {
             linha: 1,
@@ -68,7 +68,7 @@ preenchimentoTabuleiro = () => {
             peca: "C2P2",
             player: 2,
             nome: "cavalo",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         T2P2: {
             linha: 1,
@@ -76,7 +76,7 @@ preenchimentoTabuleiro = () => {
             peca: "T2P2",
             player: 2,
             nome: "torre",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P1P2: {
             linha: 2,
@@ -84,7 +84,7 @@ preenchimentoTabuleiro = () => {
             peca: "P1P2",
             player: 2,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P2P2: {
             linha: 2,
@@ -92,7 +92,7 @@ preenchimentoTabuleiro = () => {
             peca: "P2P2",
             player: 2,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P3P2: {
             linha: 2,
@@ -100,7 +100,7 @@ preenchimentoTabuleiro = () => {
             peca: "P3P2",
             player: 2,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P4P2: {
             linha: 2,
@@ -108,7 +108,7 @@ preenchimentoTabuleiro = () => {
             peca: "P4P2",
             player: 2,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P5P2: {
             linha: 2,
@@ -116,7 +116,7 @@ preenchimentoTabuleiro = () => {
             peca: "P5P2",
             player: 2,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P6P2: {
             linha: 2,
@@ -124,7 +124,7 @@ preenchimentoTabuleiro = () => {
             peca: "P6P2",
             player: 2,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P7P2: {
             linha: 2,
@@ -132,7 +132,7 @@ preenchimentoTabuleiro = () => {
             peca: "P7P2",
             player: 2,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P8P2: {
             linha: 2,
@@ -140,7 +140,7 @@ preenchimentoTabuleiro = () => {
             peca: "P8P2",
             player: 2,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
 
         //JOGADOR 1//
@@ -151,7 +151,7 @@ preenchimentoTabuleiro = () => {
             peca: "T1P1",
             player: 1,
             nome: "torre",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         C1P1: {
             linha: 8,
@@ -159,7 +159,7 @@ preenchimentoTabuleiro = () => {
             peca: "C1P1",
             player: 1,
             nome: "cavalo",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         B1P1: {
             linha: 8,
@@ -167,7 +167,7 @@ preenchimentoTabuleiro = () => {
             peca: "B1P1",
             player: 1,
             nome: "bispo",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         D1P1: {
             linha: 8,
@@ -175,7 +175,7 @@ preenchimentoTabuleiro = () => {
             peca: "D1P1",
             player: 1,
             nome: "rainha",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         R1P1: {
             linha: 8,
@@ -183,7 +183,7 @@ preenchimentoTabuleiro = () => {
             peca: "R1P1",
             player: 1,
             nome: "rei",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         B2P1: {
             linha: 8,
@@ -191,7 +191,7 @@ preenchimentoTabuleiro = () => {
             peca: "B2P1",
             player: 1,
             nome: "bispo",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         C2P1: {
             linha: 8,
@@ -199,7 +199,7 @@ preenchimentoTabuleiro = () => {
             peca: "C2P1",
             player: 1,
             nome: "cavalo",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         T2P1: {
             linha: 8,
@@ -207,7 +207,7 @@ preenchimentoTabuleiro = () => {
             peca: "T2P1",
             player: 1,
             nome: "torre",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P1P1: {
             linha: 7,
@@ -215,7 +215,7 @@ preenchimentoTabuleiro = () => {
             peca: "P1P1",
             player: 1,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P2P1: {
             linha: 7,
@@ -223,7 +223,7 @@ preenchimentoTabuleiro = () => {
             peca: "P2P1",
             player: 1,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P3P1: {
             linha: 7,
@@ -231,7 +231,7 @@ preenchimentoTabuleiro = () => {
             peca: "P3P1",
             player: 1,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P4P1: {
             linha: 7,
@@ -239,7 +239,7 @@ preenchimentoTabuleiro = () => {
             peca: "P4P1",
             player: 1,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P5P1: {
             linha: 7,
@@ -247,7 +247,7 @@ preenchimentoTabuleiro = () => {
             peca: "P5P1",
             player: 1,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P6P1: {
             linha: 7,
@@ -255,7 +255,7 @@ preenchimentoTabuleiro = () => {
             peca: "P6P1",
             player: 1,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P7P1: {
             linha: 7,
@@ -263,7 +263,7 @@ preenchimentoTabuleiro = () => {
             peca: "P7P1",
             player: 1,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
         P8P1: {
             linha: 7,
@@ -271,7 +271,7 @@ preenchimentoTabuleiro = () => {
             peca: "P8P1",
             player: 1,
             nome: "piao",
-            cliqueAndar: "",
+            cliqueAndar: "false",
         },
     };
 };
@@ -284,11 +284,13 @@ preenchimentoTabuleiroPlayer = () => {
     }
 };
 
+preenchimentoTabuleiroHTML = () => {};
+
 andarTorre = (torre, peca) => {
     let linha = torre.linha;
     let coluna = torre.coluna;
     let linhaAux;
-    if (!tabuleiro[peca].cliqueAndar) {
+    if (tabuleiro[peca].cliqueAndar == "false") {
         linhaAux = linha + 1;
         for (let index = linhaAux; index <= 8; index++) {
             let Ndiv = "#m" + index + "" + coluna + "";
@@ -306,22 +308,31 @@ andarTorre = (torre, peca) => {
         linhaAux = linha - 1;
         for (let index = linhaAux; index >= 1; index--) {
             let Ndiv = "#m" + index + "" + coluna + "";
-            var qtd = document.querySelectorAll(Ndiv + ".casa");
-            console.log(qtd);
+            let linha2 = index;
+            let coluna2 = coluna;
+
             if ($(Ndiv).html()) {
                 if (tabuleiroPlayer[index + "" + coluna] != torre.player) {
-                    let pecaInimiga = $(Ndiv).html();
-                    $(Ndiv).html("");
                     $(Ndiv).append(
-                        "<div class='moverPeca casa' onClick='clique2(58)'> " +
-                        pecaInimiga +
-                        "</div>"
+                        "<div class='moverPeca ' onClick='clique2(\"" +
+                        linha2 +
+                        '","' +
+                        coluna2 +
+                        '","' +
+                        peca +
+                        "\")'> </div>"
                     );
                 }
             } else {
                 $(Ndiv).html("");
                 $(Ndiv).append(
-                    "<div class='moverPeca casa' onClick='clique2(58)'> </div>"
+                    "<div class='moverPeca ' onClick='clique2(\"" +
+                    linha2 +
+                    '","' +
+                    coluna2 +
+                    '","' +
+                    peca +
+                    "\")'> </div>"
                 );
             }
         }
@@ -329,17 +340,25 @@ andarTorre = (torre, peca) => {
     return true;
 };
 
-clique2 = (casa, peca) => {
+clique2 = (linha2, coluna2, peca) => {
     //\""+value.profissional_id+"\",\""+idMedico+"\"
-    //console.log(58 , peca );
+    let proximaCasa = "#m" + "" + linha2.trim() + "" + coluna2.trim();
+    proximaCasa = proximaCasa.trim();
 
-    $("#m" + casa).html("");
-
-    $("#m" + casa).append(
-        "<button class='peca' onClick= 'cliquePeca('T2P1')'  >&#9814;</button>"
+    $(proximaCasa).html("");
+    $(proximaCasa).append(
+        "<button class='peca' onClick=cliquePeca('" + peca + "')  >&#9814;</button>"
     );
 
-    $("#m" + 88).html("");
+    $(".moverPeca").remove();
+    let casaAtual = tabuleiro[peca].linha + "" + tabuleiro[peca].coluna;
+
+    tabuleiro[peca].cliqueAndar = "false";
+    tabuleiro[peca].linha = linha2;
+    tabuleiro[peca].coluna = coluna2;
+
+    casaAtual = casaAtual.trim();
+    $("#m" + casaAtual).html("");
 };
 
 cliquePeca = (peca) => {
