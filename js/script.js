@@ -1,7 +1,7 @@
 /*Variaveis Globais */
 
-var tabuleiro = [{}];
-var tabuleiroPlayer = [{}];
+var Tabuleiro = [{}];
+var TabuleiroPlayer = [{}];
 
 /*Carregamento */
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 /*Functions */
 preenchimentoTabuleiro = () => {
-    tabuleiro = {
+    Tabuleiro = {
         T1P2: {
             linha: 1,
             coluna: 1,
@@ -21,6 +21,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "torre",
             cliqueAndar: "false",
+            eliminate: false,
         },
         C1P2: {
             linha: 1,
@@ -29,6 +30,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "cavalo",
             cliqueAndar: "false",
+            eliminate: false,
         },
         B1P2: {
             linha: 1,
@@ -37,6 +39,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "bispo",
             cliqueAndar: "false",
+            eliminate: false,
         },
         D1P2: {
             linha: 1,
@@ -45,6 +48,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "rainha",
             cliqueAndar: "false",
+            eliminate: false,
         },
         R1P2: {
             linha: 1,
@@ -53,6 +57,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "rei",
             cliqueAndar: "false",
+            eliminate: false,
         },
         B2P2: {
             linha: 1,
@@ -61,6 +66,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "bispo",
             cliqueAndar: "false",
+            eliminate: false,
         },
         C2P2: {
             linha: 1,
@@ -69,6 +75,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "cavalo",
             cliqueAndar: "false",
+            eliminate: false,
         },
         T2P2: {
             linha: 1,
@@ -77,6 +84,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "torre",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P1P2: {
             linha: 2,
@@ -85,6 +93,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P2P2: {
             linha: 2,
@@ -93,6 +102,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P3P2: {
             linha: 2,
@@ -101,6 +111,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P4P2: {
             linha: 2,
@@ -109,6 +120,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P5P2: {
             linha: 2,
@@ -117,6 +129,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P6P2: {
             linha: 2,
@@ -125,6 +138,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P7P2: {
             linha: 2,
@@ -133,6 +147,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P8P2: {
             linha: 2,
@@ -141,6 +156,7 @@ preenchimentoTabuleiro = () => {
             player: 2,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
 
         //JOGADOR 1//
@@ -152,6 +168,7 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "torre",
             cliqueAndar: "false",
+            eliminate: false,
         },
         C1P1: {
             linha: 8,
@@ -160,6 +177,7 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "cavalo",
             cliqueAndar: "false",
+            eliminate: false,
         },
         B1P1: {
             linha: 8,
@@ -168,6 +186,7 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "bispo",
             cliqueAndar: "false",
+            eliminate: false,
         },
         D1P1: {
             linha: 8,
@@ -176,6 +195,7 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "rainha",
             cliqueAndar: "false",
+            eliminate: false,
         },
         R1P1: {
             linha: 8,
@@ -184,6 +204,7 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "rei",
             cliqueAndar: "false",
+            eliminate: false,
         },
         B2P1: {
             linha: 8,
@@ -192,6 +213,7 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "bispo",
             cliqueAndar: "false",
+            eliminate: false,
         },
         C2P1: {
             linha: 8,
@@ -200,6 +222,7 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "cavalo",
             cliqueAndar: "false",
+            eliminate: false,
         },
         T2P1: {
             linha: 8,
@@ -208,14 +231,16 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "torre",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P1P1: {
             linha: 7,
             coluna: 1,
             peca: "P1P1",
-            player: 1,
+            player: 2,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P2P1: {
             linha: 7,
@@ -224,6 +249,7 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P3P1: {
             linha: 7,
@@ -232,6 +258,7 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P4P1: {
             linha: 7,
@@ -240,6 +267,7 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P5P1: {
             linha: 7,
@@ -248,6 +276,7 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P6P1: {
             linha: 7,
@@ -256,6 +285,7 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P7P1: {
             linha: 7,
@@ -264,107 +294,108 @@ preenchimentoTabuleiro = () => {
             player: 1,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
         P8P1: {
             linha: 7,
             coluna: 8,
             peca: "P8P1",
-            player: 1,
+            player: 2,
             nome: "piao",
             cliqueAndar: "false",
+            eliminate: false,
         },
     };
 };
 
 preenchimentoTabuleiroPlayer = () => {
-    let tabuleiroAux = Object.values(tabuleiro);
-    for (let index = 0; index < tabuleiroAux.length; index++) {
-        let nomePos = tabuleiroAux[index].linha + "" + tabuleiroAux[index].coluna;
-        tabuleiroPlayer[nomePos] = tabuleiroAux[index].player;
+    let TabuleiroAux = Object.values(Tabuleiro);
+    for (let index = 0; index < TabuleiroAux.length; index++) {
+        let nomePos = TabuleiroAux[index].linha + "" + TabuleiroAux[index].coluna;
+        TabuleiroPlayer[nomePos] = TabuleiroAux[index].player;
     }
 };
 
 preenchimentoTabuleiroHTML = () => {};
 
-andarTorre = (torre, peca) => {
+walkPieceHTML = (Ndiv, linha2, coluna2, peca, objPeca) => {
+    let posTabuleiroPlayer = linha2 + "" + coluna2;
+
+    if (TabuleiroPlayer[posTabuleiroPlayer] != objPeca.player) {
+        $(Ndiv).append(
+            "<div class='moverPeca' onClick='walkTower2(\"" +
+            linha2 +
+            '","' +
+            coluna2 +
+            '","' +
+            peca +
+            "\")'> </div>"
+        );
+    }
+};
+
+walkTower1 = (torre, peca) => {
     let linha = torre.linha;
     let coluna = torre.coluna;
-    let linhaAux;
-    if (tabuleiro[peca].cliqueAndar == "false") {
-        linhaAux = linha + 1;
-        for (let index = linhaAux; index <= 8; index++) {
-            let Ndiv = "#m" + index + "" + coluna + "";
+    let linhaAux = 0;
+    let Ndiv;
 
-            if ($(Ndiv).html()) {
-                //loop para saber da casa
-            } else {
-                $(Ndiv).html("");
-                $(Ndiv).append(
-                    "<div class='moverPeca casa' onClick='clique2(58)' </div>"
-                );
+    if (Tabuleiro[peca].cliqueAndar == "false") {
+        linhaAux = linha - 1;
+        for (let linha2 = linhaAux; linha2 >= 1; linha2--) {
+            Ndiv = "#m" + linha2 + "" + coluna + "";
+            walkPieceHTML(Ndiv, linha2, coluna, peca, torre);
+            let posTabuleiroPlayer = linha2 + "" + coluna;
+            if (TabuleiroPlayer[posTabuleiroPlayer] == torre.player) {
+                return true;
             }
         }
 
-        linhaAux = linha - 1;
-        for (let index = linhaAux; index >= 1; index--) {
-            let Ndiv = "#m" + index + "" + coluna + "";
-            let linha2 = index;
-            let coluna2 = coluna;
-
-            if ($(Ndiv).html()) {
-                if (tabuleiroPlayer[index + "" + coluna] != torre.player) {
-                    $(Ndiv).append(
-                        "<div class='moverPeca ' onClick='clique2(\"" +
-                        linha2 +
-                        '","' +
-                        coluna2 +
-                        '","' +
-                        peca +
-                        "\")'> </div>"
-                    );
-                }
-            } else {
-                $(Ndiv).html("");
-                $(Ndiv).append(
-                    "<div class='moverPeca ' onClick='clique2(\"" +
-                    linha2 +
-                    '","' +
-                    coluna2 +
-                    '","' +
-                    peca +
-                    "\")'> </div>"
-                );
+        linhaAux = parseInt(linha) + 1;
+        console.log(linhaAux);
+        for (let linha2 = linhaAux; linha2 <= 9; linha2++) {
+            Ndiv = "#m" + linha2 + "" + coluna + "";
+            console.log(Ndiv);
+            walkPieceHTML(Ndiv, linha2, coluna, peca, torre);
+            let posTabuleiroPlayer = linha2 + "" + coluna;
+            if (TabuleiroPlayer[posTabuleiroPlayer] == torre.player) {
+                return true;
             }
         }
     }
     return true;
 };
 
-clique2 = (linha2, coluna2, peca) => {
+walkTower2 = (linha2, coluna2, peca) => {
     //\""+value.profissional_id+"\",\""+idMedico+"\"
-    let proximaCasa = "#m" + "" + linha2.trim() + "" + coluna2.trim();
+    let posTabuleiroPlayer = linha2.trim() + "" + coluna2.trim();
+    let proximaCasa = "#m" + "" + posTabuleiroPlayer;
+
     proximaCasa = proximaCasa.trim();
 
     $(proximaCasa).html("");
     $(proximaCasa).append(
-        "<button class='peca' onClick=cliquePeca('" + peca + "')  >&#9814;</button>"
+        "<button class='peca' onClick=walk('" + peca + "')  >&#9814;</button>"
     );
 
     $(".moverPeca").remove();
-    let casaAtual = tabuleiro[peca].linha + "" + tabuleiro[peca].coluna;
+    let casaAtual = Tabuleiro[peca].linha + "" + Tabuleiro[peca].coluna;
 
-    tabuleiro[peca].cliqueAndar = "false";
-    tabuleiro[peca].linha = linha2;
-    tabuleiro[peca].coluna = coluna2;
+    Tabuleiro[peca].cliqueAndar = "false";
+    Tabuleiro[peca].linha = linha2;
+    Tabuleiro[peca].coluna = coluna2;
+
+    TabuleiroPlayer[casaAtual] = "";
+    TabuleiroPlayer[posTabuleiroPlayer] == Tabuleiro[peca].player;
 
     casaAtual = casaAtual.trim();
     $("#m" + casaAtual).html("");
 };
 
-cliquePeca = (peca) => {
-    if (tabuleiro[peca].nome == "torre") {
-        let resposeAndar = andarTorre(tabuleiro[peca], peca);
-        tabuleiro[peca].cliqueAndar = resposeAndar;
+walk = (peca) => {
+    if (Tabuleiro[peca].nome == "torre") {
+        let responseAndar = walkTower1(Tabuleiro[peca], peca);
+        Tabuleiro[peca].cliqueAndar = responseAndar;
         return true;
     }
 };
