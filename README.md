@@ -3,6 +3,6 @@
 
 Link do Projeto
 
-https://brmartins92.github.io/xadrez/
+https://brmartins92.github.io/xadrex/
 
 <img src="img/xadrezt.png">
